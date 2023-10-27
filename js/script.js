@@ -8,6 +8,7 @@ function createCarCards() {
         car.mileage = car.mileage.toLocaleString();
         const card = document.createElement("div")
         card.className = "carCard"
+        card.id = `${car.model}-${car.make}`;
         card.innerHTML = `
             <img src="../img/${car.model},${car.make}.webp" alt="${car.make} ${car.model} Image">
             <hr>
