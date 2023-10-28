@@ -10,66 +10,165 @@
       rel="stylesheet"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
-      />
-      <link rel="stylesheet" href="./css/style.css" />
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <div class="mainContent">
       <div class="filters">
-        <button type="button" id="btnApplyFilters">Apply Filters</button>
-        <button type="button" id="btnResetFilters">Reset Filters</button>
-        <br>
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          id="btnApplyFilters"
+        >
+          Apply Filters
+        </button>
+        <button
+          class="btn btn-outline-primary"
+          type="button"
+          id="btnResetFilters"
+        >
+          Reset Filters
+        </button>
+        <br />
         <label for="min-year">Min Year: </label>
-        <br>
-        <input type="range" name="Min Year" id="min-year" min="2014" max="2020" value="2014" oninput="this.nextElementSibling.value = this.value">
+        <br />
+        <input
+          type="range"
+          name="Min Year"
+          id="min-year"
+          min="2014"
+          max="2020"
+          value="2014"
+          oninput="this.nextElementSibling.value = this.value"
+        />
         <output id="outMinYear">2014</output>
-        <br>
+        <br />
         <label for="max-year">Max Year: </label>
-        <br>
-        <input type="range" name="Max Year" id="max-year" min="2014" max="2020" value="2020" oninput="this.nextElementSibling.value = this.value">
+        <br />
+        <input
+          type="range"
+          name="Max Year"
+          id="max-year"
+          min="2014"
+          max="2020"
+          value="2020"
+          oninput="this.nextElementSibling.value = this.value"
+        />
         <output id="outMaxYear">2020</output>
-        <br>
+        <br />
         <button type="button" class="collapsible">Make</button>
         <div class="content">
-          <input type="checkbox" name="BMW" id="bmw">
-          <label for="bmw">BMW</label>
-          <br>
-          <input type="checkbox" name="Nissan" id="nissan">
-          <label for="nissan">Nissan</label>
-          <br>
-          <input type="checkbox" name="Toyota" id="toyota">
-          <label for="toyota">Toyota</label>
-          <br>
-          <input type="checkbox" name="Porsche" id="porsche">
-          <label for="porsche">Porsche</label>
-          <br>
+          <input type="checkbox" name="Toggle BMW" id="toggleBMW" checked="true" />
+          <label>BMW</label>
+          <br />
+          <input type="checkbox" name="Toggle Cadillac" id="toggleCadillac" checked="true" />
+          <label>Cadillac</label>
+          <br />
+          <input type="checkbox" name="Toggle Chevrolet" id="toggleChevrolet" checked="true" />
+          <label>Chevrolet</label>
+          <br />
+          <input type="checkbox" name="Toggle Dodge" id="toggleDodge" checked="true" />
+          <label>Dodge</label>
+          <br />
+          <input type="checkbox" name="Toggle Ford" id="toggleFord" checked="true" />
+          <label>Ford</label>
+          <br />
+          <input type="checkbox" name="Toggle Honda" id="toggleHonda" checked="true" />
+          <label>Honda</label>
+          <br />
+          <input type="checkbox" name="Toggle Hyundai" id="toggleHyundai" checked="true" />
+          <label>Hyundai</label>
+          <br />
+          <input type="checkbox" name="Toggle Jaguar" id="toggleJaguar" checked="true" />
+          <label>Jaguar</label>
+          <br />
+          <input type="checkbox" name="Toggle Kia" id="toggleKia" checked="true" />
+          <label>Kia</label>
+          <br />
+          <input type="checkbox" name="Toggle Lexus" id="toggleLexus" checked="true" />
+          <label>Lexus</label>
+          <br />
+          <input type="checkbox" name="Toggle Mazda" id="toggleMazda" checked="true" />
+          <label>Mazda</label>
+          <br />
+          <input type="checkbox" name="Toggle Nissan" id="toggleNissan" checked="true" />
+          <label>Nissan</label>
+          <br />
+          <input type="checkbox" name="Toggle Porsche" id="togglePorsche" checked="true" />
+          <label>Porsche</label>
+          <br />
+          <input type="checkbox" name="Toggle Subaru" id="toggleSubaru" checked="true" />
+          <label>Subaru</label>
+          <br />
+          <input type="checkbox" name="Toggle Tesla" id="toggleTesla" checked="true" />
+          <label>Tesla</label>
+          <br />
+          <input type="checkbox" name="Toggle Toyota" id="toggleToyota" checked="true" />
+          <label>Toyota</label>
+          <br />
+          <input type="checkbox" name="Toggle Volkswagen" id="toggleVolkswagen" checked="true" />
+          <label>Volkswagen</label>
+          <br />
         </div>
-        <br>
+        <br />
         <label for="max-mileage">Maximum Mileage</label>
-        <br>
-        <input type="range" name="Max Mileage" id="max-mileage" max="100000" step="1000" value="100000" oninput="this.nextElementSibling.value = this.value">
+        <br />
+        <input
+          type="range"
+          name="Max Mileage"
+          id="max-mileage"
+          max="100000"
+          step="1000"
+          value="100000"
+          oninput="this.nextElementSibling.value = this.value"
+        />
         <output id="outMaxMileage">100000</output>
-        <br>
+        <br />
         <label for="max-price">Maximum Price</label>
-        <br>
-        <input type="range" name="Max Price" id="max-price" max="70000" step="1000" value="100000" oninput="this.nextElementSibling.value = this.value">
+        <br />
+        <input
+          type="range"
+          name="Max Price"
+          id="max-price"
+          max="70000"
+          step="1000"
+          value="100000"
+          oninput="this.nextElementSibling.value = this.value"
+        />
         <output id="outMaxPrice">70000</output>
-        <br>
+        <br />
         <button type="button" class="collapsible">Color</button>
         <div class="content">
-          <input type="checkbox" name="Black" id="black">
-          <label for="black">Black</label>
-          <br>
-      
-          <input type="checkbox" name="White" id="white">
-          <label for="white">White</label>
-          <br>
+          <input type="checkbox" name="Black" id="toggleBlack" checked="true" />
+          <label>Black</label>
+          <br />
+          <input type="checkbox" name="Gray" id="toggleGray" checked="true" />
+          <label>Gray</label>
+          <br />
+          <input type="checkbox" name="Silver" id="toggleSilver" checked="true" />
+          <label>Silver</label>
+          <br />
+          <input type="checkbox" name="White" id="toggleWhite" checked="true" />
+          <label>White</label>
+          <br />
+          <input type="checkbox" name="Red" id="toggleRed" checked="true" />
+          <label>Red</label>
+          <br />
+          <input type="checkbox" name="Green" id="toggleGreen" checked="true" />
+          <label>Green</label>
+          <br />
+          <input type="checkbox" name="Blue" id="toggleBlue" checked="true" />
+          <label>Blue</label>
+          <br />
         </div>
       </div>
-      <div id="carGrid"></div>
+      <div id="carGrid">
+        <p class="filterMessageHidden" id="noCardsMessage">No vehicles fit the filters you have active. Please change some filters and try again.</p>
+      </div>
     </div>
-    <script type="module" src="./js/script.js"></script>
-    <script type="module" src="./js/testing_script.js"></script>
+    <script type="module" src="./js/automated_scripts.js"></script>
+    <script type="module" src="./js/filter_scripts.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

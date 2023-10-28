@@ -3,6 +3,10 @@ import usedCars from "./usedCars.js";
 function createCarCards() {
     const carContainer = document.getElementById("carGrid");
 
+    // usedCars.sort(function(a, b) {
+    //   return a.make.localeCompare(b.make);
+    // });
+
     usedCars.forEach(car => {
         car.price = car.price.toLocaleString();
         car.mileage = car.mileage.toLocaleString();
@@ -20,7 +24,6 @@ function createCarCards() {
             <p>Color: ${car.color}</p>
             <p>Mileage: ${car.mileage}</p>
             <p>Gas Milage: ${car.gasMileage}</p>
-            <button type="button" class="btn btn-outline-primary">More Details</button>
         `;
         carContainer.appendChild(card);
     });

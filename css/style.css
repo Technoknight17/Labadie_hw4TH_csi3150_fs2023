@@ -1,13 +1,18 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: antiquewhite;
+  background-color: white;
   margin: 20px;
 }
 
 .filter {
   margin-bottom: 20px;
 }
+
 .filterHidden {
+  display: none;
+}
+
+.filterMessageHidden {
   display: none;
 }
 
@@ -19,7 +24,7 @@ body {
 }
 
 #carGrid {
-  width: 80%;
+  width: 85%;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
@@ -31,7 +36,6 @@ body {
 .mainContent {
   display: flex;
 }
-
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
