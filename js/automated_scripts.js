@@ -3,10 +3,6 @@ import usedCars from "./usedCars.js";
 function createCarCards() {
     const carContainer = document.getElementById("carGrid");
 
-    // usedCars.sort(function(a, b) {
-    //   return a.make.localeCompare(b.make);
-    // });
-
     usedCars.forEach(car => {
         car.price = car.price.toLocaleString();
         car.mileage = car.mileage.toLocaleString();
