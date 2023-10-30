@@ -10,8 +10,6 @@ function createCarCards() {
         card.className = "carCard"
         card.id = `${car.model}-${car.make}`;
         card.innerHTML = `
-            <img src="../img/${car.model},${car.make}.webp" alt="${car.make} ${car.model} Image">
-            <hr>
             <h2>${car.make} ${car.model}</h2>
 
             <p>Price: \$${car.price}</p>

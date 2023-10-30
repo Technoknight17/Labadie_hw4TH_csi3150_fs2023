@@ -6,9 +6,6 @@ document.getElementById("btnApplyFilters").onclick = function () {
 document.getElementById("btnResetFilters").onclick = function () {
   resetFilters();
 };
-document.getElementById("btnShowDetails").onclick = function () {
-  showDetails();
-};
 
 function applyFilters() {
   // Flexible variables
@@ -199,8 +196,4 @@ function resetFilters() {
   document.getElementById("toggleRed").checked = true
   document.getElementById("toggleGreen").checked = true
   document.getElementById("toggleBlue").checked = true
-}
-
-function showDetails() {
-  console.log()
 }

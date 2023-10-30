@@ -7,7 +7,6 @@ const usedCars = [
     price: 18000,
     color: "Silver",
     gasMileage: "25 mpg city, 35 mpg highway",
-    img: "./img/camry,toyota.webp"
   },
   {
     year: 2016,
